@@ -1,0 +1,44 @@
+/*font-family: 'Poppins', sans-serif;*/
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  font-family: 'Poppins', sans-serif;
+}
+
+#logo{
+  font-family: 'Tapestry', cursive;
+}
+
+html{
+  background: #252525;
+  color: #fff;
+}
+
+.neon:hover{
+  animation: neon 2s ease-in-out infinite alternate;
+  -moz-animation: neon 2s ease-in-out infinite alternate;
+  -webkit-animation: neon 2s ease-in-out infinite alternate;
+  cursor: pointer;
+  color: #C77DFF;
+  
+}
+
+
+@keyframes neon {
+  from {
+    text-shadow: 0 0 3rem #7B2CBF, 
+    0 0 2rem #7B2CBF, 
+    0 0 1.5rem #240046,
+    0 0 2rem #240046, 
+    0 0 1.3rem #240046;
+  }
+  to{
+    text-shadow: 0 0 3rem #7B2CBF, 
+    0 0 2rem #7B2CBF,
+    0 0 1.5rem #240046,
+    0 0 2rem #240046, 
+    0 0 1.3rem #240046;
+  }
+}
